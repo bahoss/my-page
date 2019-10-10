@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bahoss/my-page/static/css/main.b100e6da.chunk.css",
+    "main.js": "/bahoss/my-page/static/js/main.7dc83fd8.chunk.js",
+    "main.js.map": "/bahoss/my-page/static/js/main.7dc83fd8.chunk.js.map",
+    "runtime-main.js": "/bahoss/my-page/static/js/runtime-main.a3541b7e.js",
+    "runtime-main.js.map": "/bahoss/my-page/static/js/runtime-main.a3541b7e.js.map",
+    "static/js/2.85aaef39.chunk.js": "/bahoss/my-page/static/js/2.85aaef39.chunk.js",
+    "static/js/2.85aaef39.chunk.js.map": "/bahoss/my-page/static/js/2.85aaef39.chunk.js.map",
+    "index.html": "/bahoss/my-page/index.html",
+    "precache-manifest.0cdee482e4672a1764c823d03ad37d48.js": "/bahoss/my-page/precache-manifest.0cdee482e4672a1764c823d03ad37d48.js",
+    "service-worker.js": "/bahoss/my-page/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/bahoss/my-page/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/bahoss/my-page/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3541b7e.js",
+    "static/js/2.85aaef39.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.7dc83fd8.chunk.js"
+  ]
+}
