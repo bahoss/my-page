@@ -81,7 +81,6 @@ const BannerWrapper = styled.div`
   color: #fff;
   padding: 30px 0;
   line-height: 2.5;
-  text-align: center;
   @media screen and (max-width: 650px) {
     font-size: 20px;
     line-height: 1.5;
@@ -92,10 +91,10 @@ const MainBanner = () => (
   <Banner>
     <Container>
       <BannerWrapper>
-        Привет, Я Баходир, 34 года, с Киргизии, занимаюсь фриланс
-        веб-разработкой. Работаю с такими технологиями: HTML, CSS, JS, React,
-        Redux, React-HOC и т.д.<br></br>
-        Занимаюсь коммерческой разработкой с 2018 года.<br></br>
+       <p> {data.greeting}</p>
+       <p> {data.about}</p>
+       <p> {data.principles}</p>
+       <p> {data.skills}</p>
       </BannerWrapper>
     </Container>
   </Banner>
@@ -121,7 +120,7 @@ const Portfolios = ({ portfolios }) => (
   <PortfolioBlock>
     <Element name="portfolio"></Element>
     <Container>
-      <PortfolioTitle>Мои работы</PortfolioTitle>
+      <PortfolioTitle>My works</PortfolioTitle>
       <Portfolio></Portfolio>
     </Container>
   </PortfolioBlock>
@@ -152,7 +151,7 @@ const Contacts = () => (
   <ContactsBlock>
     <Element name="contacts"></Element>
     <Container>
-      <PortfolioTitle>Контакты</PortfolioTitle>
+      <PortfolioTitle>Contacts</PortfolioTitle>
       <ContactsWrapper>
         <List>
           <List.Item>
@@ -168,7 +167,7 @@ const Contacts = () => (
             </List.Content>
           </List.Item>
         </List>
-        <Copyright>Все права защищены</Copyright>
+        <Copyright>All rights reserved</Copyright>
       </ContactsWrapper>
     </Container>
   </ContactsBlock>
@@ -185,7 +184,7 @@ export default class Header extends Component {
                 <Photo src={photo}></Photo>
                 <Texts>
                   <Name>{data.name}</Name>
-                  <Spec>Веб-разработчик</Spec>
+                  <Spec>{data.spec}</Spec>
                 </Texts>
               </NameBlock>
               <NavMenu>
@@ -201,7 +200,7 @@ export default class Header extends Component {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                   >
-                    Портфолио
+                   Portfolio
                   </Link>
                 </MenuItem>
                 <MenuItem>
@@ -216,7 +215,7 @@ export default class Header extends Component {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                   >
-                    Контакты
+                   Contacts
                   </Link>
                 </MenuItem>
               </NavMenu>

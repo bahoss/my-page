@@ -57,11 +57,11 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
               >
                 <Icon name="desktop" />
-                Ссылка на проект
+                Link to the project
               </a>
             </Card.Content>
           ) : (
-            <Card.Content extra>Пока не вышел в продакшен</Card.Content>
+            <Card.Content extra>Private project</Card.Content>
           )}
           {portfolio.githubLink ? (
             <Card.Content extra>
@@ -71,11 +71,11 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
               >
                 <Icon name="code" />
-                Ссылка на код
+                Code
               </a>
             </Card.Content>
           ) : (
-            <Card.Content extra>Репозиторий приватный</Card.Content>
+            <Card.Content extra>Private repository</Card.Content>
           )}
           <Button
             style={{ width: "100%" }}
@@ -83,7 +83,7 @@ const Portfolio = () => {
               setOpenId(portfolio.id);
             }}
           >
-            Подробнее
+            Details
           </Button>
 
           <Modal
@@ -95,7 +95,7 @@ const Portfolio = () => {
             }}
             style={{ fontFamily: "'Comfortaa', cursive" }}
           >
-            <Modal.Header>Подробности</Modal.Header>
+            <Modal.Header>Details</Modal.Header>
             <Modal.Content image>
               <Image size="large" src={portfolio.modalImg} />
 
@@ -111,7 +111,7 @@ const Portfolio = () => {
                   setOpenId(null);
                 }}
               >
-                Закрыть
+                Close
               </Button>
             </Modal.Actions>
           </Modal>
